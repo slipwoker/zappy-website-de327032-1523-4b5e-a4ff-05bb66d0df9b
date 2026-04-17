@@ -8104,6 +8104,578 @@ body.accessibility-widget-visible ._access-menu {
     display: none !important;
   }
 }
+
+/* Added Component Styles */
+/* =============================================
+   SMART LOCKS SECTION — Doronlock
+   ============================================= */
+
+.smart-locks-section {
+  background: #f4f6f0;
+  padding: 80px 20px;
+  font-family: system-ui, sans-serif;
+  direction: rtl;
+  color: #1a2210;
+}
+
+.smart-locks-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* --- Header --- */
+.smart-locks-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.smart-locks-badge {
+  display: inline-block;
+  background: var(--gradient-primary, linear-gradient(180deg, #D48A50 0%, #C8743D 100%));
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 6px 18px;
+  border-radius: 50px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.smart-locks-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  color: #1a2210;
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+}
+
+.smart-locks-subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: #4a5a38;
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* --- Hero Block --- */
+.smart-locks-hero {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  margin-bottom: 72px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 4px 32px rgba(122, 143, 98, 0.1);
+  border: 1px solid rgba(122, 143, 98, 0.15);
+}
+
+.smart-locks-hero-image-wrap {
+  position: relative;
+  flex: 0 0 42%;
+  border-radius: 14px;
+  overflow: visible;
+}
+
+.smart-locks-hero-img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+}
+
+.smart-locks-hero-badge-float {
+  position: absolute;
+  bottom: -16px;
+  right: -16px;
+  background: var(--gradient-primary, linear-gradient(180deg, #D48A50 0%, #C8743D 100%));
+  color: #fff;
+  border-radius: 50px;
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(200, 116, 61, 0.4);
+  white-space: nowrap;
+}
+
+.hero-badge-icon {
+  font-size: 18px;
+}
+
+.smart-locks-hero-text {
+  flex: 1;
+}
+
+.smart-locks-hero-heading {
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  font-weight: 800;
+  color: #1a2210;
+  margin: 0 0 16px 0;
+}
+
+.smart-locks-hero-desc {
+  font-size: 1rem;
+  color: #3a4a2a;
+  line-height: 1.75;
+  margin: 0 0 14px 0;
+}
+
+.smart-locks-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  background: var(--primary, #7A8F62);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 16px rgba(122, 143, 98, 0.3);
+}
+
+.smart-locks-cta-btn:hover,
+.smart-locks-cta-btn:focus {
+  background: #657849;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(122, 143, 98, 0.45);
+  outline: none;
+}
+
+.smart-locks-cta-btn:focus-visible {
+  outline: 3px solid #C8743D;
+  outline-offset: 3px;
+}
+
+.cta-btn-icon {
+  font-size: 1.1rem;
+}
+
+/* --- Features Grid --- */
+.smart-locks-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+.smart-locks-feature-card {
+  background: #fff;
+  border: 1px solid rgba(122, 143, 98, 0.2);
+  border-radius: 16px;
+  padding: 32px 24px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  box-shadow: 0 2px 12px rgba(122, 143, 98, 0.07);
+}
+
+.smart-locks-feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(122, 143, 98, 0.18);
+  border-color: rgba(122, 143, 98, 0.4);
+}
+
+.feature-card-icon-wrap {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(122, 143, 98, 0.12) 0%, rgba(212, 138, 80, 0.12) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px auto;
+}
+
+.feature-card-icon {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.feature-card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1a2210;
+  margin: 0 0 10px 0;
+}
+
+.feature-card-desc {
+  font-size: 0.92rem;
+  color: #4a5a38;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* --- Brands / Types --- */
+.smart-locks-brands {
+  margin-bottom: 72px;
+}
+
+.smart-locks-brands-title {
+  font-size: clamp(1.3rem, 3vw, 1.7rem);
+  font-weight: 800;
+  color: #1a2210;
+  text-align: center;
+  margin: 0 0 36px 0;
+}
+
+.smart-locks-brands-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.brand-card {
+  background: #fff;
+  border: 1px solid rgba(122, 143, 98, 0.2);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 2px 10px rgba(122, 143, 98, 0.07);
+}
+
+.brand-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(122, 143, 98, 0.18);
+}
+
+.brand-card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.brand-card-label {
+  padding: 14px 16px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1a2210;
+  text-align: center;
+  background: #f8faf5;
+  border-top: 1px solid rgba(122, 143, 98, 0.12);
+}
+
+/* --- FAQ --- */
+.smart-locks-faq {
+  margin-bottom: 72px;
+}
+
+.smart-locks-faq-title {
+  font-size: clamp(1.3rem, 3vw, 1.7rem);
+  font-weight: 800;
+  color: #1a2210;
+  text-align: center;
+  margin: 0 0 36px 0;
+}
+
+.smart-locks-faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-item {
+  background: #fff;
+  border: 1px solid rgba(122, 143, 98, 0.25);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(122, 143, 98, 0.07);
+  transition: box-shadow 0.25s ease, transform 0.2s ease;
+}
+
+.faq-item:hover {
+  box-shadow: 0 6px 22px rgba(122, 143, 98, 0.16);
+  transform: translateY(-1px);
+}
+
+.faq-item.active {
+  border-color: rgba(122, 143, 98, 0.5);
+  box-shadow: 0 6px 24px rgba(122, 143, 98, 0.18);
+}
+
+.faq-question {
+  width: 100%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  text-align: right;
+  direction: rtl;
+  font-family: system-ui, sans-serif;
+  transition: background 0.2s ease;
+}
+
+.faq-question:hover {
+  background: rgba(122, 143, 98, 0.05);
+}
+
+.faq-question:focus-visible {
+  outline: 3px solid var(--primary, #7A8F62);
+  outline-offset: -3px;
+  border-radius: 12px;
+}
+
+.faq-question-text {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1a2210;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.faq-chevron {
+  font-size: 24px;
+  color: var(--primary, #7A8F62);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transform: rotate(-90deg);
+  transition: transform 0.3s ease;
+  line-height: 1;
+}
+
+.faq-item.active .faq-chevron {
+  transform: rotate(90deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.35s ease, opacity 0.25s ease, padding 0.25s ease;
+  padding: 0 24px;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  opacity: 1;
+  padding-bottom: 20px;
+}
+
+.faq-answer-inner {
+  border-right: 3px solid var(--primary, #7A8F62);
+  padding-right: 16px;
+  font-size: 0.97rem;
+  color: #3a4a2a;
+  line-height: 1.75;
+}
+
+/* --- CTA Banner --- */
+.smart-locks-cta-banner {
+  background: linear-gradient(135deg, #2a3a1a 0%, #3d5228 60%, #4a6230 100%);
+  border-radius: 20px;
+  padding: 56px 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.smart-locks-cta-banner::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  width: 240px;
+  height: 240px;
+  background: radial-gradient(circle, rgba(212, 138, 80, 0.18) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.smart-locks-cta-banner::after {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  right: -40px;
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, rgba(122, 143, 98, 0.2) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.cta-banner-content {
+  position: relative;
+  z-index: 1;
+}
+
+.cta-banner-title {
+  font-size: clamp(1.4rem, 3.5vw, 2rem);
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 14px 0;
+}
+
+.cta-banner-desc {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.82);
+  margin: 0 0 32px 0;
+  line-height: 1.6;
+}
+
+.cta-banner-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-banner-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  font-family: system-ui, sans-serif;
+}
+
+.cta-banner-btn-primary {
+  background: var(--gradient-primary, linear-gradient(180deg, #D48A50 0%, #C8743D 100%));
+  color: #fff;
+  box-shadow: 0 4px 18px rgba(200, 116, 61, 0.45);
+}
+
+.cta-banner-btn-primary:hover,
+.cta-banner-btn-primary:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(200, 116, 61, 0.55);
+  outline: none;
+}
+
+.cta-banner-btn-secondary {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(4px);
+}
+
+.cta-banner-btn-secondary:hover,
+.cta-banner-btn-secondary:focus {
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.7);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+.cta-banner-btn:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+
+@media (max-width: 1024px) {
+  .smart-locks-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .smart-locks-brands-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .smart-locks-section {
+    padding: 56px 16px;
+  }
+
+  .smart-locks-hero {
+    flex-direction: column;
+    padding: 28px 20px;
+    gap: 28px;
+  }
+
+  .smart-locks-hero-image-wrap {
+    flex: none;
+    width: 100%;
+  }
+
+  .smart-locks-hero-img {
+    height: 220px;
+  }
+
+  .smart-locks-hero-badge-float {
+    bottom: -12px;
+    right: 12px;
+    font-size: 12px;
+    padding: 8px 14px;
+  }
+
+  .smart-locks-features-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .smart-locks-brands-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .smart-locks-cta-banner {
+    padding: 40px 20px;
+  }
+
+  .cta-banner-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-banner-btn {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+  }
+
+  .faq-question {
+    padding: 16px 18px;
+  }
+
+  .faq-question-text {
+    font-size: 0.97rem;
+  }
+
+  .faq-answer {
+    padding: 0 18px;
+  }
+
+  .faq-item.active .faq-answer {
+    padding-bottom: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .smart-locks-brands-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .smart-locks-hero-img {
+    height: 180px;
+  }
+
+  .smart-locks-cta-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
