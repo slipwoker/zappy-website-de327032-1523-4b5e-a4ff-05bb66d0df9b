@@ -834,6 +834,25 @@ window.onload = function() {
   });
 })();
 
+/* Added Component Script */
+// PDF link handler — update the href to point to your actual PDF file
+document.addEventListener('DOMContentLoaded', function () {
+  var pdfLink = document.querySelector('[data-pdf-link="true"]');
+  if (pdfLink) {
+    // Replace the href below with the actual path to your PDF file
+    // e.g.: pdfLink.setAttribute('href', '/files/doronlock-guide.pdf');
+    // pdfLink.setAttribute('href', '/files/doronlock-guide.pdf');
+
+    pdfLink.addEventListener('click', function (e) {
+      var href = pdfLink.getAttribute('href');
+      if (!href || href === '#') {
+        e.preventDefault();
+        alert('יש להגדיר את נתיב קובץ ה-PDF. אנא עדכן את ה-href של הכפתור לנתיב הקובץ שלך.');
+      }
+    });
+  }
+});
+
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
