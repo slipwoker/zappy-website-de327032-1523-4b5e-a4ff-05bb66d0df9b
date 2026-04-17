@@ -847,15 +847,346 @@
   </div>
 </section>
 
-<section id="layout-1776457024919" class="layout-section" data-zappy-component="true" style="width: 100%; padding: 60px 0px; direction: rtl;" data-component-id="basic-text-bullets">
-  <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
-    <div style="max-width: 800px; margin: 0 auto;">
-      <h2 style="font-size: 32px; font-weight: 700; color: rgb(31, 41, 55); margin-bottom: 20px; font-family: system-ui, -apple-system, sans-serif;"></h2><h3>קטלוג מנעולים חכמים של חברת elock</h3>
-      
-      <ul style="list-style: none; padding: 0px; margin: 0px;"><li style="padding: 12px 30px 12px 0; position: relative; font-size: 16px; color: #1F2937; font-family: system-ui, -apple-system, sans-serif;"><span style="position: absolute; right: 0; color: #7A8F62;">•</span> פריט בנקודות 1</li><li style="padding: 12px 30px 12px 0; position: relative; font-size: 16px; color: #1F2937; font-family: system-ui, -apple-system, sans-serif;"><span style="position: absolute; right: 0; color: #7A8F62;">•</span> פריט בנקודות 2</li><li style="padding: 12px 30px 12px 0; position: relative; font-size: 16px; color: #1F2937; font-family: system-ui, -apple-system, sans-serif;"><span style="position: absolute; right: 0; color: #7A8F62;">•</span> פריט בנקודות 3</li></ul>
+<section style="width: 100%; max-width: 100%; box-sizing: border-box; background: var(--bg-light); position: relative; overflow: hidden; padding: 80px 0px 100px; opacity: 1;" data-zappy-section="true" class="section" id="zappy-section-1">
+<style>
+  .elock-catalog-section {
+    font-family: system-ui, sans-serif;
+    direction: rtl;
+  }
+  .elock-bg-shape {
+    position: absolute;
+    top: -60px;
+    left: -80px;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(122,143,98,0.13) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  .elock-bg-shape2 {
+    position: absolute;
+    bottom: -80px;
+    right: -60px;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201,110,75,0.11) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  .elock-diagonal-stripe {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(
+      -55deg,
+      transparent,
+      transparent 60px,
+      rgba(212,168,79,0.04) 60px,
+      rgba(212,168,79,0.04) 62px
+    );
+    z-index: 0;
+    pointer-events: none;
+  }
+  .elock-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 32px;
+    position: relative;
+    z-index: 10;
+  }
+  .elock-header-block {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 64px;
+    position: relative;
+  }
+  .elock-heading-accent-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+  .elock-heading-accent-bar span {
+    display: block;
+    border-radius: 4px;
+  }
+  .elock-heading-accent-bar span:nth-child(1) {
+    width: 56px; height: 6px;
+    background: var(--gradient-primary);
+  }
+  .elock-heading-accent-bar span:nth-child(2) {
+    width: 36px; height: 6px;
+    background: var(--gradient-gold-shine);
+  }
+  .elock-heading-accent-bar span:nth-child(3) {
+    width: 20px; height: 6px;
+    background: var(--primary);
+    opacity: 0.5;
+  }
+  .elock-heading-text {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 900;
+    color: var(--text-dark);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    position: relative;
+  }
+  .elock-heading-text em {
+    font-style: normal;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .elock-heading-badge {
+    display: inline-block;
+    margin-right: 14px;
+    padding: 4px 14px;
+    background: var(--gradient-gold-shine);
+    color: var(--text-dark);
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: var(--radius-badge);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    vertical-align: middle;
+    box-shadow: 0 2px 8px rgba(212,168,79,0.22);
+  }
+  .elock-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 28px;
+    align-items: stretch;
+  }
+  .elock-card {
+    background: #fff;
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+    padding: 40px 32px 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition-hover);
+    cursor: default;
+    border: 1.5px solid var(--border-light);
+  }
+  .elock-card::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 80px; height: 80px;
+    border-radius: 0 var(--radius-card) 0 80px;
+    background: var(--gradient-gold-shine);
+    opacity: 0.13;
+    transition: opacity 0.3s;
+  }
+  .elock-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-elevated);
+    border-color: var(--accent);
+  }
+  .elock-card:hover::before {
+    opacity: 0.28;
+  }
+  .elock-card:nth-child(2) {
+    background: var(--bg-dark);
+    border-color: var(--border-dark);
+  }
+  .elock-card:nth-child(2) .elock-card-num {
+    color: var(--accent);
+  }
+  .elock-card:nth-child(2) .elock-card-title {
+    color: var(--text-light);
+  }
+  .elock-card:nth-child(2)::after {
+    background: var(--gradient-primary);
+  }
+  .elock-card:nth-child(2)::before {
+    background: var(--gradient-primary);
+    opacity: 0.2;
+  }
+  .elock-card-num {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--border-light);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    font-variant-numeric: tabular-nums;
+    transition: color 0.25s;
+    position: relative;
+    z-index: 1;
+  }
+  .elock-card:hover .elock-card-num {
+    color: var(--accent);
+  }
+  .elock-card:nth-child(2):hover .elock-card-num {
+    color: var(--secondary);
+  }
+  .elock-card-dot {
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    background: var(--gradient-primary);
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(201,110,75,0.25);
+    margin-top: 3px;
+    transition: transform 0.2s;
+  }
+  .elock-card:nth-child(2) .elock-card-dot {
+    background: var(--gradient-gold-shine);
+  }
+  .elock-card:nth-child(3) .elock-card-dot {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+  }
+  .elock-card:hover .elock-card-dot {
+    transform: scale(1.4);
+  }
+  .elock-card-title {
+    font-size: 1.18rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    line-height: 1.4;
+    position: relative;
+    z-index: 1;
+  }
+  .elock-card-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .elock-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0; right: 0; left: 0;
+    height: 4px;
+    background: var(--gradient-gold-shine);
+    border-radius: 0 0 var(--radius-card) var(--radius-card);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .elock-card:hover::after {
+    opacity: 1;
+  }
+  .elock-card:nth-child(2)::after {
+    background: var(--gradient-primary);
+  }
+  .elock-card:nth-child(3)::after {
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+  }
+  .elock-section-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  .elock-section-label-line {
+    flex: 1;
+    height: 1.5px;
+    background: linear-gradient(90deg, var(--border-light), transparent);
+  }
+  .elock-section-label-text {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+  @media (max-width: 900px) {
+    .elock-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    .elock-card:nth-child(3) {
+      grid-column: 1 / -1;
+    }
+  }
+  @media (max-width: 600px) {
+    .elock-inner {
+      padding: 0 18px;
+    }
+    .elock-grid {
+      grid-template-columns: 1fr;
+    }
+    .elock-card:nth-child(3) {
+      grid-column: auto;
+    }
+    .elock-heading-text {
+      font-size: 1.6rem;
+    }
+    .elock-header-block {
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 14px;
+      margin-bottom: 40px;
+    }
+    .elock-heading-accent-bar {
+      flex-direction: row;
+    }
+    .elock-heading-accent-bar span {
+      width: 28px !important;
+      height: 5px;
+    }
+  }
+</style>
+
+<div class="elock-catalog-section">
+  <div class="elock-bg-shape"></div>
+  <div class="elock-bg-shape2"></div>
+  <div class="elock-diagonal-stripe"></div>
+
+  <div class="elock-inner">
+    <!-- Section label -->
+    <div class="elock-section-label">
+      <div class="elock-section-label-line"></div>
+      <p class="zappy-editable"><span class="elock-section-label-text">elock</span>
+      </p><div class="elock-section-label-line" style="background:linear-gradient(90deg,transparent,var(--border-light));"></div>
+    </div>
+
+    <!-- Header -->
+    <div class="elock-header-block">
+      <div class="elock-heading-accent-bar">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <h3 class="elock-heading-text" style="text-align: right; outline: none;">
+        קטלוג מנעולים <em>חכמים</em>
+        <br>
+        של חברת <em>elock</em>
+        <span class="elock-heading-badge">Smart</span>
+      </h3>
+    </div>
+
+    <!-- Cards -->
+    <div class="elock-grid">
+      <div class="elock-card">
+        <div class="elock-card-num" style="">01</div>
+        <div class="elock-card-row">
+          <div class="elock-card-dot"></div>
+          <div class="elock-card-title" style="">פריט בנקודות 1</div>
+        </div>
+      </div>
+
+      <div class="elock-card">
+        <div class="elock-card-num">02</div>
+        <div class="elock-card-row">
+          <div class="elock-card-dot"></div>
+          <div class="elock-card-title">פריט בנקודות 2</div>
+        </div>
+      </div>
+
+      <div class="elock-card">
+        <div class="elock-card-num">03</div>
+        <div class="elock-card-row">
+          <div class="elock-card-dot"></div>
+          <div class="elock-card-title">פריט בנקודות 3</div>
+        </div>
+      </div>
     </div>
   </div>
-  
+</div>
 </section>
 
 
