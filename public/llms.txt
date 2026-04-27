@@ -23,6 +23,9 @@ https://example.com/contact
 ### elock קטלוג
 https://example.com/electronic-catalog
 
+### Page
+https://example.com/2026
+
 ## Legal & Policy
 
 ### Privacy Policy
