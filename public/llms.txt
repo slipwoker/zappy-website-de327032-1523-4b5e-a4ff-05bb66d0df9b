@@ -1,53 +1,68 @@
-# Business — Generative Engine Optimization Map
+# Doronlock — Generative Engine Optimization Map
+
+> A certified locksmith business offering professional locksmith services. The business emphasizes professional credentials and certification, suggesting a focus on trust, reliability, and expertise in the field of lock and security solutions.
 
 ---
 
 ## Pages
 
 ### בית
-https://example.com
+https://doronlock.zappy5.app
 מחפשים מנעולן מוסמך באזור באר שבע והסביבה? Doronlock מספק שירות מקצועי ומהיר לפריצת דלתות, החלפת מנעולים ואבטחת הבית. התקשרו עכשיו!
 
 ### שירותים
-https://example.com/services
+https://doronlock.zappy5.app/services
 פריצת דלתות, החלפת מנעולים ואבטחת עסקים ובתים — Doronlock מציעה מגוון שירותי מנעולנות מקצועיים בבאר שבע. גלו את כל הפתרונות שלנו וצרו קשר היום.
 
 ### אודות
-https://example.com/about
+https://doronlock.zappy5.app/about
 Doronlock הוא מנעולן מוסמך ומנוסה באזור באר שבע והסביבה, המחויב למקצועיות, אמינות ושקיפות מלאה. הכירו את האיש שמאחורי השירות ולמדו למה לבחור בנו.
 
 ### צור קשר
-https://example.com/contact
+https://doronlock.zappy5.app/contact
 נתקעתם בחוץ או צריכים החלפת מנעולים דחופה? צרו קשר עם Doronlock עכשיו לשירות מנעולן מהיר ומוסמך בבאר שבע והסביבה — אנחנו כאן בשבילכם סביב השעון.
 
 ### elock קטלוג
-https://example.com/electronic-catalog
+https://doronlock.zappy5.app/electronic-catalog
 
 ### Page
-https://example.com/2026
+https://doronlock.zappy5.app/2026
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://example.com/privacy
+https://doronlock.zappy5.app/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://example.com/terms
+https://doronlock.zappy5.app/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://example.com/accessibility
+https://doronlock.zappy5.app/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
 
 # Business Context (for LLM understanding)
 
-## About Business
+## About Doronlock
+A certified locksmith business offering professional locksmith services. The business emphasizes professional credentials and certification, suggesting a focus on trust, reliability, and expertise in the field of lock and security solutions.
+
+## Services/Products
+- מנעולנות מוסמכת
+
+## Target Audience
+- בעלי בתים במצב חירום
+- בעלי עסקים קטנים
+- שוכרים עם דאגות בטיחות
+
+## Industry
+שירותי מנעולנות
+
 ---
 
 # Additional Resources
 
-- **Sitemap**: https://example.com/sitemap.xml
-- **Robots.txt**: https://example.com/robots.txt
+- **Sitemap**: https://doronlock.zappy5.app/sitemap.xml
+- **Robots.txt**: https://doronlock.zappy5.app/robots.txt
