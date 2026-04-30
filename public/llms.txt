@@ -1,6 +1,4 @@
-# Doronlock — Generative Engine Optimization Map
-
-> A certified locksmith business offering professional locksmith services. The business emphasizes professional credentials and certification, suggesting a focus on trust, reliability, and expertise in the field of lock and security solutions.
+# Business — Generative Engine Optimization Map
 
 ---
 
@@ -46,20 +44,7 @@ Information about WCAG compliance and accessibility features.
 
 # Business Context (for LLM understanding)
 
-## About Doronlock
-A certified locksmith business offering professional locksmith services. The business emphasizes professional credentials and certification, suggesting a focus on trust, reliability, and expertise in the field of lock and security solutions.
-
-## Services/Products
-- מנעולנות מוסמכת
-
-## Target Audience
-- בעלי בתים במצב חירום
-- בעלי עסקים קטנים
-- שוכרים עם דאגות בטיחות
-
-## Industry
-שירותי מנעולנות
-
+## About Business
 ---
 
 # Additional Resources
