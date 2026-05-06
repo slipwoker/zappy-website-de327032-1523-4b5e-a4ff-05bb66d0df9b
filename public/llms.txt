@@ -1,53 +1,90 @@
-# Business — Generative Engine Optimization Map
+# Doronlock — Generative Engine Optimization Map
+
+> A certified locksmith business offering professional locksmith services. The business emphasizes professional credentials and certification, suggesting a focus on trust, reliability, and expertise in the field of lock and security solutions.
 
 ---
 
 ## Pages
 
 ### בית
-https://doronlock.zappy5.app
+https://doronlock.co.il
 מחפשים מנעולן מוסמך באזור באר שבע והסביבה? Doronlock מספק שירות מקצועי ומהיר לפריצת דלתות, החלפת מנעולים ואבטחת הבית. התקשרו עכשיו!
 
 ### שירותים
-https://doronlock.zappy5.app/services
+https://doronlock.co.il/services
 פריצת דלתות, החלפת מנעולים ואבטחת עסקים ובתים — Doronlock מציעה מגוון שירותי מנעולנות מקצועיים בבאר שבע. גלו את כל הפתרונות שלנו וצרו קשר היום.
 
 ### אודות
-https://doronlock.zappy5.app/about
+https://doronlock.co.il/about
 Doronlock הוא מנעולן מוסמך ומנוסה באזור באר שבע והסביבה, המחויב למקצועיות, אמינות ושקיפות מלאה. הכירו את האיש שמאחורי השירות ולמדו למה לבחור בנו.
 
 ### צור קשר
-https://doronlock.zappy5.app/contact
+https://doronlock.co.il/contact
 נתקעתם בחוץ או צריכים החלפת מנעולים דחופה? צרו קשר עם Doronlock עכשיו לשירות מנעולן מהיר ומוסמך בבאר שבע והסביבה — אנחנו כאן בשבילכם סביב השעון.
 
 ### elock קטלוג
-https://doronlock.zappy5.app/electronic-catalog
+https://doronlock.co.il/electronic-catalog
 
 ### Page
-https://doronlock.zappy5.app/2026
+https://doronlock.co.il/2026
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://doronlock.zappy5.app/privacy
+https://doronlock.co.il/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://doronlock.zappy5.app/terms
+https://doronlock.co.il/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://doronlock.zappy5.app/accessibility
+https://doronlock.co.il/accessibility
 Information about WCAG compliance and accessibility features.
+
+---
+
+## How to Contact Us
+
+- Email: dor06on@gmail.com
+- Phone: 0506077271
+- Phone (tel): tel:0506077271
+- Address: אופקים, ישראל
+
+### Contact form
+- URL: https://doronlock.co.il/contact
+- Endpoint: https://doronlock.co.il/api/email/contact-form
+- Method: POST
+- Content-Type: application/json
+- Fields:
+  - `name` (text, required)
+  - `email` (email, required)
+  - `phone` (tel, required)
+  - `message` (textarea, required)
+  - `privacy_consent` (checkbox, required)
 
 ---
 
 # Business Context (for LLM understanding)
 
-## About Business
+## About Doronlock
+A certified locksmith business offering professional locksmith services. The business emphasizes professional credentials and certification, suggesting a focus on trust, reliability, and expertise in the field of lock and security solutions.
+
+## Services/Products
+- מנעולנות מוסמכת
+
+## Target Audience
+- בעלי בתים במצב חירום
+- בעלי עסקים קטנים
+- שוכרים עם דאגות בטיחות
+
+## Industry
+שירותי מנעולנות
+
 ---
 
-# Additional Resources
+# Machine-readable feeds
 
-- **Sitemap**: https://doronlock.zappy5.app/sitemap.xml
-- **Robots.txt**: https://doronlock.zappy5.app/robots.txt
+- Sitemap (XML): https://doronlock.co.il/sitemap.xml
+- Robots: https://doronlock.co.il/robots.txt
+- Flattened page text (for LLMs): https://doronlock.co.il/llms-full.txt
