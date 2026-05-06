@@ -643,6 +643,34 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+/* Added Component Script */
+(function () {
+  // FAQ Accordion
+  const faqItems = document.querySelectorAll('.parking-barrier-faq-item');
+
+  faqItems.forEach(function (item) {
+    const btn = item.querySelector('.parking-barrier-faq-question');
+    if (!btn) return;
+
+    btn.addEventListener('click', function () {
+      const isActive = item.classList.contains('active');
+
+      // Close all
+      faqItems.forEach(function (el) {
+        el.classList.remove('active');
+        const b = el.querySelector('.parking-barrier-faq-question');
+        if (b) b.setAttribute('aria-expanded', 'false');
+      });
+
+      // Toggle clicked
+      if (!isActive) {
+        item.classList.add('active');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+})();
+
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){

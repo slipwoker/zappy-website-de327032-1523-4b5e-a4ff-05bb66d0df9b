@@ -8870,6 +8870,493 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 body { font-family: 'Source Sans 3', sans-serif; font-weight: 400; }
 h1, h2, h3, h4, h5, h6 { font-family: 'Oswald', sans-serif; font-weight: 700; }
 
+
+/* Added Component Styles */
+/* ============================================
+   PARKING BARRIER SECTION — Doronlock
+   ============================================ */
+
+.parking-barrier-section {
+  background: #f4f6f1;
+  padding: 80px 20px;
+  font-family: system-ui, sans-serif;
+  direction: rtl;
+  color: #1a1a1a;
+}
+
+.parking-barrier-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* --- Header --- */
+.parking-barrier-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.parking-barrier-badge {
+  display: inline-block;
+  background: var(--gradient-primary, linear-gradient(180deg, #D48A50 0%, #C8743D 100%));
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 6px 18px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.parking-barrier-title {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0 0 14px 0;
+  line-height: 1.2;
+}
+
+.parking-barrier-subtitle {
+  font-size: 1.1rem;
+  color: #4a5240;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* --- Main Grid --- */
+.parking-barrier-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+/* --- Image --- */
+.parking-barrier-image-wrapper {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(122, 143, 98, 0.18);
+}
+
+.parking-barrier-main-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
+  transition: transform 0.4s ease;
+}
+
+.parking-barrier-image-wrapper:hover .parking-barrier-main-img {
+  transform: scale(1.03);
+}
+
+.parking-barrier-img-badge {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #3a4a2e;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.parking-barrier-img-badge-icon {
+  font-size: 16px;
+}
+
+/* --- Info Column --- */
+.parking-barrier-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.parking-barrier-info-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.parking-barrier-info-text {
+  font-size: 1rem;
+  color: #3e4a36;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.parking-barrier-features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.parking-barrier-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  color: #2a3222;
+  font-weight: 500;
+}
+
+.parking-barrier-feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: var(--primary, #7A8F62);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.parking-barrier-cta-btn {
+  display: inline-block;
+  background: var(--gradient-primary, linear-gradient(180deg, #D48A50 0%, #C8743D 100%));
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 50px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 16px rgba(200, 116, 61, 0.35);
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+.parking-barrier-cta-btn:hover,
+.parking-barrier-cta-btn:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(200, 116, 61, 0.45);
+  outline: none;
+}
+
+.parking-barrier-cta-btn:focus-visible {
+  outline: 3px solid #C8743D;
+  outline-offset: 3px;
+}
+
+/* --- Services Section --- */
+.parking-barrier-services {
+  margin-bottom: 64px;
+}
+
+.parking-barrier-services-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-align: center;
+  margin: 0 0 32px 0;
+}
+
+.parking-barrier-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.parking-barrier-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(122, 143, 98, 0.1);
+  border: 1px solid rgba(122, 143, 98, 0.18);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.parking-barrier-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(122, 143, 98, 0.2);
+}
+
+.parking-barrier-card-icon-wrap {
+  width: 100%;
+  overflow: hidden;
+}
+
+.parking-barrier-card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.parking-barrier-card:hover .parking-barrier-card-img {
+  transform: scale(1.05);
+}
+
+.parking-barrier-card-body {
+  padding: 20px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.parking-barrier-card-emoji {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.parking-barrier-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.parking-barrier-card-text {
+  font-size: 0.92rem;
+  color: #4a5240;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* --- FAQ Section --- */
+.parking-barrier-faq-section {
+  max-width: 800px;
+  margin: 0 auto 64px;
+}
+
+.parking-barrier-faq-title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-align: center;
+  margin: 0 0 32px 0;
+}
+
+.parking-barrier-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.parking-barrier-faq-item {
+  background: #fff;
+  border: 1px solid rgba(122, 143, 98, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(122, 143, 98, 0.08);
+  overflow: hidden;
+  transition: box-shadow 0.25s ease, transform 0.2s ease;
+}
+
+.parking-barrier-faq-item:hover {
+  box-shadow: 0 6px 20px rgba(122, 143, 98, 0.16);
+  transform: translateY(-1px);
+}
+
+.parking-barrier-faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 24px;
+  font-family: system-ui, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-align: right;
+  direction: rtl;
+  transition: background 0.2s ease;
+}
+
+.parking-barrier-faq-question:hover {
+  background: rgba(122, 143, 98, 0.06);
+}
+
+.parking-barrier-faq-question:focus-visible {
+  outline: 3px solid var(--primary, #7A8F62);
+  outline-offset: -3px;
+}
+
+.parking-barrier-faq-chevron {
+  font-size: 14px;
+  color: var(--primary, #7A8F62);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.parking-barrier-faq-item.active .parking-barrier-faq-chevron {
+  transform: rotate(180deg);
+}
+
+.parking-barrier-faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.35s ease, opacity 0.25s ease, padding 0.25s ease;
+}
+
+.parking-barrier-faq-item.active .parking-barrier-faq-answer {
+  max-height: 500px;
+  opacity: 1;
+  padding-bottom: 20px;
+}
+
+.parking-barrier-faq-answer-inner {
+  border-right: 3px solid var(--primary, #7A8F62);
+  margin: 0 24px;
+  padding: 0 16px;
+  font-size: 0.97rem;
+  color: #3e4a36;
+  line-height: 1.75;
+}
+
+/* --- CTA Banner --- */
+.parking-barrier-cta-banner {
+  background: var(--gradient-primary, linear-gradient(180deg, #D48A50 0%, #C8743D 100%));
+  border-radius: 20px;
+  padding: 40px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  box-shadow: 0 8px 32px rgba(200, 116, 61, 0.3);
+}
+
+.parking-barrier-cta-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.parking-barrier-cta-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.parking-barrier-cta-desc {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+.parking-barrier-cta-btn-white {
+  display: inline-block;
+  background: #fff;
+  color: #C8743D;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 800;
+  padding: 14px 30px;
+  border-radius: 50px;
+  white-space: nowrap;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  flex-shrink: 0;
+}
+
+.parking-barrier-cta-btn-white:hover,
+.parking-barrier-cta-btn-white:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  outline: none;
+}
+
+.parking-barrier-cta-btn-white:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 900px) {
+  .parking-barrier-cards-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .parking-barrier-section {
+    padding: 56px 16px;
+  }
+
+  .parking-barrier-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .parking-barrier-main-img {
+    height: 260px;
+  }
+
+  .parking-barrier-cta-btn {
+    align-self: stretch;
+    text-align: center;
+  }
+
+  .parking-barrier-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .parking-barrier-cta-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 32px 24px;
+  }
+
+  .parking-barrier-cta-btn-white {
+    width: 100%;
+    text-align: center;
+  }
+
+  .parking-barrier-faq-question {
+    font-size: 0.97rem;
+    padding: 16px 18px;
+  }
+
+  .parking-barrier-faq-answer-inner {
+    margin: 0 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .parking-barrier-title {
+    font-size: 1.8rem;
+  }
+
+  .parking-barrier-info-title {
+    font-size: 1.3rem;
+  }
+
+  .parking-barrier-services-title,
+  .parking-barrier-faq-title {
+    font-size: 1.4rem;
+  }
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
