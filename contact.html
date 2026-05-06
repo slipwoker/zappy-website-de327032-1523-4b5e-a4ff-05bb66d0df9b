@@ -223,6 +223,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="צרו קשר עכשיו ותקבלו מענה מהיר — Doronlock">
     <meta name="twitter:description" content="נתקעתם בחוץ או צריכים החלפת מנעולים דחופה? צרו קשר עם Doronlock עכשיו לשירות מנעולן מהיר ומוסמך בבאר שבע והסביבה — אנחנו כאן בשבילכם סביב השעון.">
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LocalBusiness","@id":"https://doronlock.co.il#organization","name":"Doronlock","url":"https://doronlock.co.il","description":"A certified locksmith business offering professional locksmith services. The business emphasizes professional credentials and certification, suggesting a focus on trust, reliability, and expertise in the field of lock and security solutions.","address":{"@type":"PostalAddress","streetAddress":"אופקים, ישראל"},"contactPoint":[{"@type":"ContactPoint","contactType":"customer service","email":"dor06on@gmail.com","telephone":"0506077271"}]},{"@type":"WebSite","@id":"https://doronlock.co.il#website","url":"https://doronlock.co.il","name":"Doronlock","publisher":{"@id":"https://doronlock.co.il#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://doronlock.co.il"},{"@type":"ListItem","position":2,"name":"Contact","item":"https://doronlock.co.il/contact"}]},{"@type":"ContactPage","@id":"https://doronlock.co.il/contact#contactpage","url":"https://doronlock.co.il/contact","name":"צרו קשר עכשיו ותקבלו מענה מהיר — Doronlock","mainEntity":{"@id":"https://doronlock.co.il#organization"},"potentialAction":{"@type":"CommunicateAction","target":{"@type":"EntryPoint","urlTemplate":"https://doronlock.co.il/api/email/contact-form","actionPlatform":["http/method=POST"],"contentType":"application/json"},"instrument":[{"@type":"PropertyValue","name":"name","propertyID":"text","valueRequired":true,"description":"ישראל ישראלי"},{"@type":"PropertyValue","name":"email","propertyID":"email","valueRequired":true,"description":"your@email.com"},{"@type":"PropertyValue","name":"phone","propertyID":"tel","valueRequired":true,"description":"050-000-0000"},{"@type":"PropertyValue","name":"message","propertyID":"textarea","valueRequired":true,"description":"תארו את הצורך שלכם — פריצת דלת, החלפת מנעול, שירות לעסק או בית..."},{"@type":"PropertyValue","name":"privacy_consent","propertyID":"checkbox","valueRequired":true}]}}]}</script>
     <meta property="og:type" content="website">
   <meta property="og:locale" content="he_IL">
   
@@ -298,11 +299,37 @@
     </style>
 
     <style id="zappy-widget-visibility">
-      #mic-access-tool-general-button, .mic-access-tool-general-button,
-      #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
-      ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
-      #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
-        display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+      html[dir="rtl"] .whatsapp-float { right: 20px !important; left: auto !important; }
+      html[dir="ltr"] .whatsapp-float, html:not([dir]) .whatsapp-float { left: 20px !important; right: auto !important; }
+      html[dir="rtl"] #mic-access-tool-general-button, html[dir="rtl"] .mic-access-tool-general-button,
+      html[dir="rtl"] #mic-init-access-tool .mic-access-tool-general-button,
+      html[dir="rtl"] #mic-init-access-tool #mic-access-tool-general-button,
+      html[dir="rtl"] ._access-icon { left: 20px !important; right: auto !important; }
+      html[dir="ltr"] #mic-access-tool-general-button, html[dir="ltr"] .mic-access-tool-general-button,
+      html[dir="ltr"] #mic-init-access-tool .mic-access-tool-general-button,
+      html[dir="ltr"] #mic-init-access-tool #mic-access-tool-general-button,
+      html[dir="ltr"] ._access-icon,
+      html:not([dir]) #mic-access-tool-general-button, html:not([dir]) .mic-access-tool-general-button,
+      html:not([dir]) #mic-init-access-tool .mic-access-tool-general-button,
+      html:not([dir]) #mic-init-access-tool #mic-access-tool-general-button,
+      html:not([dir]) ._access-icon { right: 20px !important; left: auto !important; }
+      @media (max-width: 768px) { .whatsapp-float { display: flex !important; } }
+      @media (min-width: 769px) { .whatsapp-float { display: flex !important; } }
+      @media (max-width: 768px) {
+        #mic-access-tool-general-button, .mic-access-tool-general-button,
+        #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
+        ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
+        #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
+          display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+        }
+      }
+      @media (min-width: 769px) {
+        #mic-access-tool-general-button, .mic-access-tool-general-button,
+        #mic-init-access-tool .mic-access-tool-general-button, #mic-init-access-tool #mic-access-tool-general-button,
+        ._access-icon, #mic-access-tool-box, .mic-access-tool-box,
+        #mic-init-access-tool #mic-access-tool-box, div[id*="mic-access-tool-box"], ._access-menu {
+          display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important;
+        }
       }
     </style>
 </head>
